@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Everything That Comes With It</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Morris | Author</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #f2f2f2;
+      font-family: "Georgia", serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+
+    .tagline {
+      font-size: 1.6rem;
+      margin-top: 10px;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    a {
+      color: #ff2e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links {
+      margin-top: 40px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      border: 1px solid #ff2e63;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #ff2e63;
+      color: #000;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+
 </head>
 <body>
-    <h1>Site Coming Soon</h1>
-    <p>This is the GitHub Pages version of Daniel Morris's site.</p>
+
+  <div class="container">
+    <h1>Daniel Morris</h1>
+    <div class="tagline">Dark. Twisted. Humorous. Everything that comes with it.</div>
+
+    <p>
+      Author. Storyteller. Professional overthinker.  
+      I write about the strange shit lurking in alleys, minds, holidays, and occasionally, the kitchen sink.
+    </p>
+
+    <p>
+      New book: <strong>Kris Kringle: Homicide and Other Absurd Tales</strong>  
+      <br>(Available on Amazon)
+    </p>
+
+    <div class="links">
+      <a href="https://www.amazon.com/" target="_blank">Buy the Book</a>
+      <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/danielmorrisgallery" target="_blank">Instagram</a>
+      <a href="mailto:daniel@everythingthatcomeswithit.com">Email Me</a>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> Daniel Morris. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
